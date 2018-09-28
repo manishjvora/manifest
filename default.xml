@@ -21,6 +21,10 @@
            revision="7.x"
            review="gerrit.aospextended.com" />
 
+  <remote  name="mv"
+           fetch="https://github.com/manishjvora"
+           revision="AEX7.x" />
+
   <remote  name="exssh"
            fetch="git@github.com:AospExtended"
            revision="7.x" />
@@ -35,55 +39,55 @@
            sync-j="4" />
 
  <!-- AospExtended -->
-  <project path="manifest" name="manifest" remote="ex" />
+  <project path="manifest" name="manifest" remote="mv" />
   <project name="platform_build" path="build" groups="pdk,tradefed" remote="ex" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bionic" name="platform_bionic" groups="pdk" remote="ex" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="ex" />
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="ex" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="ex"  />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="mv"  />
   <project path="packages/apps/Extensions" name="platform_packages_apps_Extensions" groups="pdk-fs" remote="ex" />
   <project path="packages/apps/AEXOTA" name="platform_packages_apps_AEXOTA" groups="pdk-fs" remote="ex" />
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="ex" />
-  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="ex" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="mv" />
+  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="mv" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="ex" />
   <project path="packages/apps/DUI" name="platform_packages_apps_DUI" remote="ex" />
   <project path="external/DUtils" name="platform_external_DUtils" remote="ex" />
   <project path="packages/apps/OmniStyle" name="platform_packages_apps_OmniStyle" remote="ex" />
-  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="ex"  />
+  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="mv"  />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="ex"  />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="ex" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="ex" />
-  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="ex" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="ex"  />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="mv" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="mv"  />
   <project path="frameworks/support" name="platform_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="ex"  />
-  <project path="libcore" name="platform_libcore" groups="pdk"  remote="ex"  />
+  <project path="libcore" name="platform_libcore" groups="pdk"  remote="mv"  />
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="ex"  />
   <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" groups="pdk-fs" remote="ex"  />
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" groups="pdk-fs" remote="ex"  />
   <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" groups="pdk-fs" remote="ex" />
-  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" groups="pdk-fs" remote="ex"  />
+  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" groups="pdk-fs" remote="mv"  />
   <project path="packages/apps/FMRadio" name="platform_packages_apps_FMRadio" groups="pdk-fs" remote="ex" />
   <project path="packages/providers/ContactsProvider" name="platform_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="ex"  />
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="ex"  />
-  <project path="system/media" name="platform_system_media" groups="pdk" remote="ex"  />
+  <project path="system/media" name="platform_system_media" groups="pdk" remote="mv"  />
   <project path="system/netd" name="platform_system_netd" groups="pdk" remote="ex"  />
   <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="ex"  />
   <project path="packages/services/OmniJaws" name="platform_packages_services_OmniJaws" remote="ex" />
   <project path="packages/apps/ExactCalculator" name="platform_packages_apps_ExactCalculator" groups="pdk-fs" remote="ex" />
   <project path="packages/apps/MusicFX" name="platform_packages_apps_MusicFX" groups="pdk-fs" remote="ex" />
   <project path="packages/apps/DSPlibs" name="platform_packages_apps_DSPlibs" remote="ex" />  
-  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="ex" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="mv" />
   <project path="packages/apps/Stk" name="platform_packages_apps_Stk" groups="apps_stk,pdk-fs" remote="ex" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="ex" />
-  <project path="system/bt" name="platform_system_bt" groups="pdk" remote="ex" />
+  <project path="system/bt" name="platform_system_bt" groups="pdk" remote="mv" />
   <project path="system/security" name="platform_system_security" groups="pdk" remote="ex" />
   <project path="external/dhcpcd-6.8.2" name="platform_external_dhcpcd-6.8.2" groups="pdk" remote="ex" />
   <project path="external/boringssl" name="platform_external_boringssl" groups="pdk" remote="ex" />
   <project path="external/skia" name="platform_external_skia" groups="pdk-cw-fs,qcom_msm8x26" remote="ex" />
   <project path="external/chromium-webview" name="platform_external_chromium-webview" groups="pdk" remote="ex" />
-  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="ex" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="mv" />
   <project path="packages/apps/SoundRecorder" name="platform_packages_apps_SoundRecorder" remote="ex" />
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="ex" />
   <project path="external/libpng" name="platform_external_libpng" groups="pdk" remote="ex" />
@@ -129,7 +133,7 @@
   <project path="frameworks/opt/hardware" name="platform_frameworks_opt_hardware" groups="pdk" remote="aosp-jf" />
   <project path="packages/apps/HTMLViewer" name="platform_packages_apps_HTMLViewer" groups="pdk-fs" remote="aosp-jf" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk-fs" remote="aosp-jf" />
-  <project path="system/vold" name="platform_system_vold" groups="pdk" remote="aosp-jf" />
+  <project path="system/vold" name="platform_system_vold" groups="pdk" remote="mv" />
   <project path="system/extras" name="platform_system_extras" groups="pdk" remote="aosp-jf" />
   <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="aosp-jf" />
   <project path="external/libchrome" name="platform_external_libchrome" remote="aosp-jf" />
