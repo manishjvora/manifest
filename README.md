@@ -34,14 +34,14 @@ To initialize your local repository using the AospExtended trees, use a
 command like this:
 
 ```bash
-  repo init -u git://github.com/AospExtended/manifest.git -b 7.x
+  repo init -u git://github.com/manishjvora/manifest.git -b AEX7.x --depth=1 --groups=all,-darwin,-x86,-mips,-exynos5
 ```
   
 Then to sync up:
 ----------------
 
 ```bash
-  repo sync -c -jx --force-sync --no-clone-bundle --no-tags
+  repo sync -c --force-sync --no-clone-bundle --no-tags
 ```
 Finally to build:
 -----------------
