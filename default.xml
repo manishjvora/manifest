@@ -126,7 +126,7 @@
   <project path="external/tinyxml2" name="android_external_tinyxml2" groups="pdk" remote="LOS" />
   <project path="external/yaffs2" name="android_external_yaffs2" groups="pdk" remote="LOS" />
   <project path="external/zlib" name="android_external_zlib" groups="pdk" remote="LOS" />
-  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" remote="LOS" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" remote="mv" />
   <project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" groups="pdk-fs" remote="LOS" />
   <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" groups="pdk-fs" remote="LOS" />
   <project path="packages/apps/CarrierConfig" name="android_packages_apps_CarrierConfig" groups="pdk-fs" remote="LOS" />
