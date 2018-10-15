@@ -1,3 +1,5 @@
+This branch is rebase from JDC AOSP to AOSP Nougat
+===========
 <p align="center">
 <img src="https://github.com/AospExtended/manifest/raw/7.1.1/aex_logo.png" width="320px" height="320px" > 
 </p>
@@ -34,7 +36,7 @@ To initialize your local repository using the AospExtended trees, use a
 command like this:
 
 ```bash
-  repo init -u git://github.com/manishjvora/manifest.git -b AEX7.x --depth=1 --groups=all,-darwin,-x86,-mips,-exynos5
+  repo init -u git://github.com/manishjvora/manifest.git -b AOSP_AEX7.x --depth=1 --groups=all,-darwin,-x86,-mips,-exynos5
 ```
   
 Then to sync up:
