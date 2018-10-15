@@ -43,7 +43,7 @@
            sync-j="4" />
 
  <!-- AospExtended -->
-  <project path="manifest" name="manifest" remote="mv" />
+  <project path="manifest" name="manifest" remote="mv" revision="LOS_AEX7.x" />
   <project name="platform_build" path="build" groups="pdk,tradefed" remote="mv" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
